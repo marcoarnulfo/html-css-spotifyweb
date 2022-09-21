@@ -31,11 +31,11 @@ body{
 
 #site_main{
     max-width: 1440px;
+    
 }
 
 .sidebard_debug{
-    height: 1800px;
-    height: calc(100vh);
+    height: 100vh;
     background-color: var(--side_bar);
     z-index: 1;
     color: white;
@@ -82,12 +82,15 @@ body{
 }
 
 .bottom{
-    width: 100vw;
     background-color: var(--footer);
-    height: 300px;
-
+    height: 100px;
+    width: 100vw;
 }
 
+.overflow_debug{
+    height: 100vh;
+    overflow:scroll;
+}
 /* #region col_ */
 
 .col_1 {
