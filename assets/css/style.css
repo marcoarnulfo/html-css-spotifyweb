@@ -13,6 +13,94 @@
 
 }
 
+.flex{
+    display: flex;
+}
+
+body{
+    background-color: var(--footer);
+}
+
+#site_nav{
+    height: 100px;
+    width: 1440px;
+    background-color:var(--nav_upgrade);
+    position: fixed;
+    justify-content: right;
+}
+
+.sidebard_debug{
+    height: calc(100vh - 100px);
+    background-color: var(--side_bar);
+    z-index: 1;
+    color: white;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.mg_top_debug{
+    margin-top: 5rem;
+}
+
+.card_top, .card_bottom{
+    padding: 2rem;
+    display: block;
+}
+
+
+
+/* #region col_ */
+
+.col_1 {
+    width: calc((100% / 12) * 1);
+}
+
+.col_2 {
+    width: calc((100% / 12) * 2);
+}
+
+.col_3 {
+    width: calc((100% / 12) * 3);
+}
+
+.col_4 {
+    width: calc((100% / 12) * 4);
+}
+
+.col_5 {
+    width: calc((100% / 12) * 5);
+}
+
+.col_6 {
+    width: calc((100% / 12) * 6 );
+}
+
+.col_7 {
+    width: calc((100% / 12) * 7);
+}
+
+.col_8 {
+    width: calc((100% / 12) * 8);
+}
+
+.col_9 {
+    width: calc((100% / 12) * 9);
+}
+
+.col_10 {
+    width: calc((100% / 12) * 10);
+}
+
+.col_11 {
+    width: calc((100% / 12) * 11);
+}
+
+.col_12 {
+    width: calc((100% / 12) * 12);
+}
+
+/* #endregion col_ */
+
 /* #region utility */
 
 
