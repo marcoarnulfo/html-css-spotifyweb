@@ -24,18 +24,24 @@ body{
 
 #site_nav{
     height: 100px;
-    max-width: 1440px;
+    width: 100vw;
+    max-width: 1400px;
+    position: fixed;
     background-color:var(--nav_upgrade);
     justify-content: right;
 }
 
-#site_main{
-    max-width: 1440px;
-    
+nav a{
+    display: block;
+    position: relative;
 }
 
-.sidebard_debug{
-    height: 100vh;
+.container{
+    max-width: 1400px;
+}
+
+.sidebar_debug{
+    height: calc(100vh - 100px);
     background-color: var(--side_bar);
     z-index: 1;
     color: white;
@@ -44,13 +50,12 @@ body{
 }
 
 .mg_top_debug{
-
     color: white;
+    padding: 0.5rem;
 }
 
 .card_top, .card_bottom{
     padding: 2rem;
-    display: block;
 }
 
 .links{
@@ -65,9 +70,6 @@ body{
     text-align: left;
 }
 
-.debug{
-    padding: 0.5rem;
-}
 
 .debug h2, div{
     text-align: center;
@@ -81,6 +83,7 @@ body{
     padding: 0.5rem;
 }
 
+
 .bottom{
     background-color: var(--footer);
     height: 100px;
@@ -88,9 +91,8 @@ body{
 }
 
 .overflow_debug{
-    height: 100vh;
-    overflow:scroll;
-    overflow-x: hidden;
+    overflow: auto;
+    height: calc(100vh - 100px);
 }
 /* #region col_ */
 
