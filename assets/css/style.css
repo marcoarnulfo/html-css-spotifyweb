@@ -90,6 +90,7 @@ body{
 .overflow_debug{
     height: 100vh;
     overflow:scroll;
+    overflow-x: hidden;
 }
 /* #region col_ */
 
