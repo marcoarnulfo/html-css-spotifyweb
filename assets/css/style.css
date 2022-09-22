@@ -12,8 +12,12 @@
     --underline: #ADFF2F;
 }
 
-.flex{
+.flex {
     display: flex;
+}
+
+.column {
+    flex-direction: column;
 }
 
 /* #region col_ */
@@ -70,6 +74,7 @@
 
 .wrapper {
     height: 100vh;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .top {
@@ -84,38 +89,100 @@
     width: 240px;
     background-color: var(--side_bar);
     height: 100%;
+    justify-content: space-between;
 }
 
-.logo{
+.sidebar span,
+.sidebar li {
+    font-size: 0.9rem;
+}
+
+.logo {
     margin-bottom: 1.2rem;
 }
 
-.logo img{
+.logo img {
     width: 130px;
 }
 
-.top_sidebar{
+
+.top_sidebar,
+.bottom_sidebar {
     color: white;
     padding: 1rem;
 }
 
-.home{
+.home {
     padding: 0.1rem 0rem;
 }
 
-.home img{
+.home img {
     width: 30px;
 }
 
-.home span{
+.home span {
     align-self: center;
     padding: 0rem 0.5rem;
 }
 
+.play {
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+}
 
+.plus {
+    padding: 0.3rem 0.5rem;
+    aspect-ratio: 1 / 1;
+    display: inline-block;
+    background-color: #a3a3a3;
+}
+
+.fa-plus {
+    color: black;
+    font-size: 30px;
+}
+
+.playlist_button span {
+    align-self: center;
+    padding-left: 0.5rem;
+}
+
+.name_playlists {
+    padding-top: 0.5rem;
+    list-style-type: none;
+}
+
+.name_playlists li {
+    padding: 0.5rem 0rem;
+}
+
+
+.install {
+    font-size: 13px;
+    border-bottom: 1px solid white;
+    padding-bottom: 0.5rem;
+}
+
+.fa-circle-down {
+    padding-right: 0.3rem;
+}
+
+.user {
+    padding: 0.5rem 0rem;
+}
+
+.user img {
+    width: 20px;
+    background-color: gray;
+    border-radius: 50%;
+}
+
+.user span {
+    align-self: center;
+    padding-left: 0.5rem;
+}
 
 /* #endregion sidebar */
-
 
 
 .content {
@@ -130,7 +197,7 @@
     justify-content: end;
 }
 
-.upgrade a{
+.upgrade a {
     align-self: center;
     text-decoration: none;
     color: white;
@@ -144,6 +211,7 @@
     overflow-y: auto;
     height: calc(100% - 80px);
 }
+
 .music_container {
     max-width: 1440px;
     padding: 1rem;
@@ -192,7 +260,28 @@
     .sidebar {
         width: 60px;
     }
-    .home span{
+
+    .home span {
         display: none;
     }
+
+    .playlist_button,
+    .name_playlists,
+    .play,
+    .install span,
+    .user span {
+        display: none;
+    }
+
+    .install i{
+        padding-right: 0;
+    }
+
+    .install,
+    .user {
+        border: none;
+        display: flex;
+        justify-content: center;
+    }
+
 }

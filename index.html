@@ -7,16 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotifyy</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
 
     <div class="wrapper">
         <div class="top">
-            <div class="sidebar">
+            <div class="sidebar flex column">
                 <div class="top_sidebar">
                     <div class="logo">
-                        <img  src="./assets/img/logo.svg" alt="">
+                        <img src="./assets/img/logo.svg" alt="">
                     </div>
                     <div class="home flex">
                         <img src="./assets/img/home.svg" alt="">
@@ -30,11 +33,33 @@
                         <img src="./assets/img/libreria.svg" alt="">
                         <span>La tua libreria</span>
                     </div>
-                    <div>
-                        <strong>PLAYLIST</strong>
-                        <div>
-                            <img src="" alt="">
+                    <div class="play">PLAYLIST</div>
+                    <div class="playlist_button flex">
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
                         </div>
+                        <span>Crea playlist</span>
+                    </div>
+                    <ul class="name_playlists">
+                        <li>Nome playlist</li>
+                        <li>Nome playlist</li>
+                        <li>Nome playlist</li>
+                        <li>Nome playlist</li>
+                        <li>Nome playlist</li>
+                        <li>Nome playlist</li>
+                        <li>Nome playlist</li>
+                    </ul>
+                </div>
+                <div class="bottom_sidebar">
+                    <div class="install">
+                        <i class="fa-regular fa-circle-down"></i>
+                        <span>
+                            Installa app
+                        </span>
+                    </div>
+                    <div class="user flex">
+                        <img src="./assets/img/profile.svg" alt="">
+                        <span>Jhon Doe</span>
                     </div>
                 </div>
             </div>
