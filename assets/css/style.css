@@ -101,8 +101,15 @@
     margin-bottom: 1.2rem;
 }
 
-.logo img {
+.logo .medium {
     width: 130px;
+}
+
+.small{
+    width: 40px;
+    text-align: center;
+    display: none;
+    align-self: center;
 }
 
 
@@ -264,6 +271,16 @@
     .home span {
         display: none;
     }
+    
+    .medium{
+        display: none;
+    }
+
+    .small{
+        display: block;
+    }
+
+
 
     .playlist_button,
     .name_playlists,
