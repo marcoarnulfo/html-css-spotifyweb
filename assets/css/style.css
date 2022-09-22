@@ -105,7 +105,7 @@
     width: 130px;
 }
 
-.small{
+.small {
     width: 40px;
     text-align: center;
     display: none;
@@ -224,6 +224,28 @@
     padding: 1rem;
 }
 
+.titles{
+    padding-top: 0.5rem;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.titles a{
+    text-decoration: none;
+    color: #a3a3a3;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+h2{
+    padding: 0.5rem;
+    color: white;
+    padding-bottom: 1rem;
+}
+
+
+
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -236,9 +258,38 @@
 }
 
 .album {
-    padding: 1rem;
-    height: 150px;
-    background-color: red;
+    text-align: center;
+    background-color: re;
+}
+
+.album img{
+    max-width: 100%;
+}
+
+.album h3{
+    margin-top: 0.3rem;
+    padding: 0.5rem ;
+    color: white;
+}
+
+.longh3{
+    font-size: 0.9rem;
+}
+
+.sub,
+.subh2{
+    font-weight: bold;
+    font-size: 0.8rem;
+    color: #a3a3a3;
+}
+
+.subh2{
+    padding-left: 0.5rem;
+    padding-bottom: 1rem;
+}
+
+.populars img{
+    border-radius: 50%;
 }
 
 .player {
@@ -271,16 +322,14 @@
     .home span {
         display: none;
     }
-    
-    .medium{
+
+    .medium {
         display: none;
     }
 
-    .small{
+    .small {
         display: block;
     }
-
-
 
     .playlist_button,
     .name_playlists,
@@ -290,7 +339,7 @@
         display: none;
     }
 
-    .install i{
+    .install i {
         padding-right: 0;
     }
 
