@@ -336,6 +336,53 @@ h2 {
     font-size: 1.2rem;
 }
 
+
+
+.player_buttons{
+    justify-content: center;
+    gap: 2rem;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.player_buttons i{
+    align-self: center;
+}
+
+.fa-circle-play{
+    font-size: 2rem;
+    padding: 0rem 0.5rem;
+}
+
+.player_bar{
+    justify-content: center;
+}
+
+.player_bar div{
+    align-self: center;
+}
+
+.left_time,
+.right_time{
+    padding: 0.5rem 1.3rem;
+    font-weight: bold;
+    color: white;
+}
+
+.bar{
+    width: 450px;
+    height: 5px;
+    background-color: #5A5A5A;
+    border-radius: 5rem;
+}
+
+.withe_bar{
+    width: 100px;
+    height: 5px;
+    background-color: #C1C1C1;
+    border-radius: 5rem;
+}
+
 /* #endregion player */
 
 
