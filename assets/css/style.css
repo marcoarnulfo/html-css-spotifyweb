@@ -92,10 +92,10 @@
     justify-content: space-between;
 }
 
-.sidebar span,
+/* .sidebar span,
 .sidebar li {
     font-size: 0.9rem;
-}
+} */
 
 .logo {
     margin-bottom: 1.2rem;
@@ -116,7 +116,7 @@
 .top_sidebar,
 .bottom_sidebar {
     color: white;
-    padding: 1rem;
+    padding: 0.3rem 1rem;
 }
 
 .home {
@@ -165,7 +165,7 @@
 
 
 .install {
-    font-size: 13px;
+    font-size: 15px;
     border-bottom: 1px solid white;
     padding-bottom: 0.5rem;
 }
@@ -175,11 +175,11 @@
 }
 
 .user {
-    padding: 0.5rem 0rem;
+    padding-top: 0.5rem;
 }
 
 .user img {
-    width: 20px;
+    width: 25px;
     background-color: gray;
     border-radius: 50%;
 }
@@ -220,25 +220,31 @@
 }
 
 .music_container {
-    max-width: 1440px;
     padding: 1rem;
 }
 
-.titles{
+.titles {
+    flex-wrap: wrap;
     padding-top: 0.5rem;
-    gap: 1rem;
     justify-content: center;
 }
 
-.titles a{
+.titles a,
+.titles .col_2 {
+    display: inline-block;
+}
+
+.titles a {
     text-decoration: none;
     color: #a3a3a3;
     font-size: 0.8rem;
     font-weight: bold;
     margin-bottom: 1rem;
+    padding: 1rem;
+
 }
 
-h2{
+h2 {
     padding: 0.5rem;
     color: white;
     padding-bottom: 1rem;
@@ -259,45 +265,79 @@ h2{
 
 .album {
     text-align: center;
-    background-color: re;
 }
 
-.album img{
+.album img {
     max-width: 100%;
 }
 
-.album h3{
+.album h3 {
     margin-top: 0.3rem;
-    padding: 0.5rem ;
+    padding: 0.5rem;
     color: white;
 }
 
-.longh3{
+.longh3 {
     font-size: 0.9rem;
 }
 
 .sub,
-.subh2{
+.subh2 {
     font-weight: bold;
     font-size: 0.8rem;
     color: #a3a3a3;
 }
 
-.subh2{
+.subh2 {
     padding-left: 0.5rem;
     padding-bottom: 1rem;
 }
 
-.populars img{
+.populars img {
     border-radius: 50%;
 }
 
+/* #region player */
 .player {
-    display: flex;
+    padding: 1rem;
     justify-content: space-between;
     height: 80px;
     background-color: var(--footer);
 }
+
+.current_song{
+    width: 50px;
+}
+
+.current_name{
+    align-self: center;
+    padding: 0.8rem;
+    color: white;
+}
+
+.current_name h5{
+    font-size: 1.1rem;
+}
+
+.current_name div{
+    font-weight: bold;
+    color: #a3a3a3;
+    font-size: 0.8rem;
+}
+
+.album_details span{
+    align-self: center;
+    margin-left: 1rem;
+}
+
+.fa-heart,
+.fa-folder{
+    color: #a3a3a3;
+    font-size: 1.2rem;
+}
+
+/* #endregion player */
+
 
 
 @media screen and (max-width: 1440px) {}
