@@ -16,6 +16,10 @@
     display: flex;
 }
 
+.wrap{
+    flex-wrap: wrap;
+}
+
 .column {
     flex-direction: column;
 }
@@ -270,7 +274,6 @@ h2 {
 
 .row {
     display: flex;
-    flex-wrap: wrap;
     margin-bottom: 1rem;
 }
 
@@ -322,12 +325,13 @@ h2 {
 }
 
 .current_song{
-    width: 50px;
+    width: 70px;
+    height: 65px;
 }
 
 .current_name{
     align-self: center;
-    padding: 0.8rem;
+    padding: 0rem 0.8rem;
     color: white;
 }
 
@@ -341,10 +345,11 @@ h2 {
     font-size: 0.8rem;
 }
 
-.album_details span{
+.folder{
     align-self: center;
-    margin-left: 1rem;
+    gap: 0.5rem;
 }
+
 
 .fa-heart,
 .fa-folder{
@@ -475,11 +480,47 @@ h2 {
     .col_2 {
         width: calc((100% / 12) * 3);
     }
+    .col_2_bot{
+        width: calc(100% / 12 * 4);
+    }
+    .col_8_bot{
+        width: calc(100% / 8 * 4);
+    }
+    .current_song{
+        width: 35%;
+        height: 90%;
+    }
+    .player_buttons{
+        gap: 1rem;
+    }
+    .left_time,
+    .right_time{
+    padding: 0.5rem 0.8rem;
+}
+.col_8_bot{
+    margin-left: 2rem;
+}
 }
 
 @media screen and (max-width: 639px) {
     .col_2 {
         width: calc((100% / 12) * 6);
+    }
+    .folder{
+        flex-direction: column;
+    }
+    .audio i{
+        padding: 0.2rem;
+        font-size: 0.8rem;
+    }
+    .right_time{
+        padding: 0rem 0.5rem;
+    }
+    .audio{
+        justify-content: center;
+    }
+    .bar_right{
+        width: 60px;
     }
 }
 
@@ -517,6 +558,10 @@ h2 {
         border: none;
         display: flex;
         justify-content: center;
+    }
+
+    .col_8_bot{
+        margin-left: 3rem;
     }
 
 }
