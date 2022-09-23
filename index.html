@@ -23,7 +23,7 @@
                         <img class="small" src="./assets/img/logo-small.svg" alt="">
                         <img class="medium" src="./assets/img/logo.svg" alt="">
                     </div>
-                    <div class="home flex">
+                    <div id="home" class="home flex">
                         <img src="./assets/img/home.svg" alt="">
                         <span>Home</span>
                     </div>
@@ -42,15 +42,15 @@
                         </div>
                         <span>Crea playlist</span>
                     </div>
-                    <ul class="name_playlists">
-                        <li>Nome playlist</li>
-                        <li>Nome playlist</li>
-                        <li>Nome playlist</li>
-                        <li>Nome playlist</li>
-                        <li>Nome playlist</li>
-                        <li>Nome playlist</li>
-                        <li>Nome playlist</li>
-                    </ul>
+                        <ul class="name_playlists">
+                            <li>Nome playlist</li>
+                            <li>Nome playlist</li>
+                            <li>Nome playlist</li>
+                            <li>Nome playlist</li>
+                            <li>Nome playlist</li>
+                            <li>Nome playlist</li>
+                            <li>Nome playlist</li>
+                        </ul>
                 </div>
                 <div class="bottom_sidebar">
                     <div class="install">
@@ -73,7 +73,7 @@
                 <div class="music">
                     <div class="music_container">
                         <div class="titles flex wrap">
-                            <a href="#">IN EVIDENZA</a>
+                            <a href="#">IN E<span class="border_bottom">VIDE</span>NZA</a>
                             <a href="#">PODCAST</a>
                             <a href="#">CLASSIFICHE</a>
                             <a href="#">GENERI E MOOD</a>
@@ -184,12 +184,22 @@
                 <div class="player_bar flex">
                     <div class="left_time">00:25</div>
                     <div class="bar">
-                        <div class="withe_bar"></div>
+                        <div class="withe_bar flex">
+                            <div class="circle"></div>
+                        </div>
                     </div>
                     <div class="right_time">4:35</div>
                 </div>
             </div>
-            <div class="audio">123</div>
+            <div class="audio flex">
+                <i class="fa-solid fa-list-ul"></i>
+                <i class="fa-solid fa-display"></i>
+                <i class="fa-solid fa-volume-high"></i>
+                <div class="bar_right">
+                    <div class="withe_bar_right flex">
+                        <div class="circle"></div>
+                    </div>
+            </div>
         </div>
     </div>
 

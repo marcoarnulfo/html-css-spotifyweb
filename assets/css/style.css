@@ -78,7 +78,7 @@
 }
 
 .top {
-    height: calc(100vh - 80px);
+    height: calc(100vh - 90px);
     background-color: var(--song_background);
     display: flex;
 }
@@ -89,13 +89,9 @@
     width: 240px;
     background-color: var(--side_bar);
     height: 100%;
+    overflow: hidden;
     justify-content: space-between;
 }
-
-/* .sidebar span,
-.sidebar li {
-    font-size: 0.9rem;
-} */
 
 .logo {
     margin-bottom: 1.2rem;
@@ -110,6 +106,12 @@
     text-align: center;
     display: none;
     align-self: center;
+}
+
+#home{
+    margin-left: -1rem;
+    border-left: #ADFF2F 4px solid;
+    padding-left: 0.7rem;
 }
 
 
@@ -153,6 +155,8 @@
     align-self: center;
     padding-left: 0.5rem;
 }
+
+
 
 .name_playlists {
     padding-top: 0.5rem;
@@ -241,7 +245,11 @@
     font-weight: bold;
     margin-bottom: 1rem;
     padding: 1rem;
+}
 
+.border_bottom{
+    border-bottom: #ADFF2F 3px solid;
+    padding-bottom: 5px;
 }
 
 h2 {
@@ -301,7 +309,7 @@ h2 {
 .player {
     padding: 1rem;
     justify-content: space-between;
-    height: 80px;
+    height: 90px;
     background-color: var(--footer);
 }
 
@@ -377,15 +385,73 @@ h2 {
 }
 
 .withe_bar{
-    width: 100px;
+    width: 20%;
     height: 5px;
     background-color: #C1C1C1;
     border-radius: 5rem;
 }
 
+.withe_bar{
+    justify-content: end;
+}
+
+.circle{
+    background-color: white;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: none;
+}
+
+.bar_right{
+    width: 130px;
+    height: 5px;
+    background-color: #5A5A5A;
+    border-radius: 5rem;
+}
+
+.withe_bar_right{
+    justify-content: end;
+    width: 20%;
+    height: 5px;
+    background-color: #C1C1C1;
+    border-radius: 5rem;
+}
+
+.audio i,
+.audio div{
+    align-self: center;
+}
+
+.audio i{
+    color: white;
+    padding: 0.5rem;
+}
 /* #endregion player */
 
 
+/* #region hover */
+
+.withe_bar:hover {
+    background-color: #ADFF2F;
+    cursor: pointer;
+}
+
+.withe_bar:hover .circle{
+    display: block;
+}
+
+.withe_bar_right:hover {
+    background-color: #ADFF2F;
+    cursor: pointer;
+}
+
+.withe_bar_right:hover .circle{
+    display: block;
+}
+
+
+/* #endregion hover */
 
 @media screen and (max-width: 1440px) {}
 
